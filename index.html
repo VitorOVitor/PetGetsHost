@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/HomePage/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/HomePage/Scripts.js"></script>
+  <script src="https://kit.fontawesome.com/8abc0a1ef2.js" crossorigin="anonymous"></script>
+
+
+  <title>Pet Gets</title>
+</head>
+
+<body>
+  <header>
+    <img src="/imagens/logo.jpeg" alt="logo" id="logo">
+    <img src="/imagens/logomarca.jpeg" alt="logo" id="marca">
+  </header>
+
+  <div class="menu">
+    <div class="topnav">
+      <a href="/HomePage/index.html">Home</a>
+      <a href="/Formulariohtml/index.html">Formulário</a>
+      <a href="/Contatoshtml/contatos.html">Contato</a>
+      <a href="/duvidashtml/duvidas.html">Dúvidas</a>
+      <p> <button class="login" onclick="showCadastro()">Entrar</button>
+
+      </p>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="cadastro hidden">
+      <div class="conteudo-centralizado">
+        <div class="login-form hidden">
+          <ul>
+            <li>
+              <p>Login</p>
+            </li>
+            <li><input id="loginCnpj" type="text" placeholder="CPF"></li>
+            <li><input id="loginSenha" type="password" placeholder="Senha"></li>
+            <li><button class="em_desenvolvimento" id="btnLogin">Entrar</button></li>
+            <li><button class="cadastro">Criar conta</button></li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            <p>Cadastro de Usuário</p>
+          </li>
+          <li><input id="nomeInstituicao" type="text" placeholder="Nome de Usuário"></li>
+          <li><input type="text" id="cnpjInput" placeholder="Digite o CPF" onkeyup="formatCnpj(event)"></li>
+          <li><input type="password" id="senhaInput" placeholder="Senha"></li>
+          <li><input id="contato" type="text" placeholder="Contato (E-mail, Telefone)"></li>
+          <li><button id="criarConta">Criar conta de Usuário</button></li>
+        </ul>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="search">
+        <a class="pesquisar" href="" target="_blank"></a>
+        <input type="search" id="search-input" placeholder="Pesquisar...">
+        <div class="list">
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <main>
+
+    <section>
+
+      <div class="card cachorro macho filhote" data-species="cachorro" data-gender="macho" data-age="adulto">
+        <div class="card-image">
+          <img src="/imagens/c1.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomec1"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosc1">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao1.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cachorro macho adulto">
+        <div class="card-image">
+          <img src="/imagens/c2.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomec2"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosc2">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao2.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card cachorro femea adulto">
+        <div class="card-image">
+          <img src="/imagens/c3.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomec3"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosc3">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao3.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gato macho filhote">
+        <div class="card-image">
+          <img src="/imagens/g1.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomeg1"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosg1">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao4.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gato macho adulto">
+        <div class="card-image">
+          <img src="/imagens/g2.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomeg2"></div>
+          <div class="flex">
+            <ul>
+              <li>
+                <div id="dadosg2">
+
+                </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao5.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gato femea adulto">
+        <div class="card-image">
+          <img src="/imagens/g3.jpeg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomeg3"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosg3">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao6.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gato macho filhote">
+        <div class="card-image">
+          <img src="/imagens/g4.jpg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomeg4"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosg4">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao7.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card gato macho filhote">
+        <div class="card-image">
+          <img src="/imagens/g5.jpg" alt="Imagem do Card">
+        </div>
+        <div class="card-content">
+          <div id="nomeg5"></div>
+          <div class="flex">
+            <ul>
+              <div id="dadosg5">
+
+              </div>
+            </ul>
+            <button><a href="/VerMaishtml/Descricao8.html">Ver Mais</a></button>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <aside>
+      <div class="sidebar">
+        <h1>FILTROS</h1>
+        <ul id="filtros" class="itens">
+          <li>
+            <a>Espécie</a>
+            <button class="btn-filtro" onclick="toggleSubItens(this)">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <ul class="sub-itens esconder">
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" name="checkbox" id="checkbox-cachorro" value="cachorro">
+                    <span class="checkmark"></span>
+                  </label>
+                  Cachorro</a></li>
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" name="especie" id="checkbox-gato" value="gato">
+                    <span class="checkmark"></span>
+                  </label>
+                  Gato</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>Sexo</a>
+            <button class="btn-filtro" onclick="toggleSubItens(this)">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <ul class="sub-itens esconder">
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" id="checkbox-femea" class="checkbox-sexo" value="femea">
+                    <span class="checkmark"></span>
+                  </label>
+                  Fêmea
+                </a></li>
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" id="checkbox-macho" class="checkbox-sexo" value="macho">
+                    <span class="checkmark"></span>
+                  </label>
+                  Macho</a></li>
+            </ul>
+          </li>
+          <li>
+            <a>Idade</a>
+            <button class="btn-filtro" onclick="toggleSubItens(this)">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <ul class="sub-itens esconder">
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" id="checkbox-filhote" value="filhote">
+                    <span class="checkmark"></span>
+                  </label>
+                  Filhote</a></li>
+              <li><a>
+                  <label class="form-control">
+                    <input type="checkbox" id="checkbox-adulto" value="adulto">
+                    <span class="checkmark"></span>
+                  </label>
+                  Adulto</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+
+  <script>
+
+function showCadastro() {
+  const overlay = document.querySelector('.overlay');
+  const cadastro = document.querySelector('.cadastro');
+
+  overlay.classList.add('show');
+  cadastro.classList.remove('hidden');
+}
+
+document.addEventListener('click', function (event) {
+  const overlay = document.querySelector('.overlay');
+  const cadastro = document.querySelector('.cadastro');
+
+  if (event.target === overlay) {
+    overlay.classList.remove('show');
+    cadastro.classList.add('hidden');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  var loginButton = document.querySelector('.login');
+  var cadastroDiv = document.querySelector('.cadastro');
+  var overlayDiv = document.querySelector('.overlay');
+
+  loginButton.addEventListener('click', function () {
+    cadastroDiv.classList.add('show');
+    overlayDiv.style.display = 'flex';
+  });
+
+  overlayDiv.addEventListener('click', function (event) {
+    if (event.target === overlayDiv) {
+      cadastroDiv.classList.remove('show');
+      overlayDiv.style.display = 'none';
+    }
+  });
+
+  function salvarDados() {
+    // Recupera os valores dos campos de texto
+    var nomeInstituicao = document.getElementById("nomeInstituicao").value;
+    var cnpj = document.getElementById("cnpjInput").value;
+    var senha = document.getElementById("senhaInput").value;
+    var contato = document.getElementById("contato").value;
+
+    // Verifica se os campos estão preenchidos
+    if (nomeInstituicao && cnpj && senha && contato) {
+      // Cria um objeto com os dados
+      var dados = {
+        nomeInstituicao: nomeInstituicao,
+        cnpj: cnpj,
+        senha: senha,
+        contato: contato
+      };
+
+      // Converte o objeto em uma string JSON
+      var dadosJSON = JSON.stringify(dados);
+
+      // Salva os dados no localStorage
+      localStorage.setItem("dadosInstituicao", dadosJSON);
+
+      // Exibe uma mensagem de sucesso
+      alert("Conta criada com sucesso!");
+
+      // Limpa os campos do formulário
+      document.getElementById("nomeInstituicao").value = "";
+      document.getElementById("cnpjInput").value = "";
+      document.getElementById("senhaInput").value = "";
+      document.getElementById("contato").value = "";
+
+      var cadastroDiv = document.querySelector('.cadastro');
+      var overlayDiv = document.querySelector('.overlay');
+
+      cadastroDiv.remove();
+      overlayDiv.style.display = 'none';
+
+      // Redireciona para a home
+      window.location.href = "index.html";
+
+    } else {
+      // Exibe uma mensagem de erro se algum campo estiver vazio
+      alert("Preencha todos os campos do formulário.");
+    }
+  }
+
+  // Adiciona um evento de clique ao botão "Criar conta Instituição"
+  var botaoCriarConta = document.getElementById("criarConta");
+  botaoCriarConta.addEventListener("click", salvarDados);
+
+  // Adiciona um evento de clique ao botão "Entrar"
+  var btnEntrar = document.getElementById('btnLogin');
+  btnEntrar.addEventListener('click', showCadastro);
+});
+
+
+
+    function formatCnpj(event) {
+      let cnpjInput = event.target;
+      let cnpj = cnpjInput.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+      // Formata o CNPJ
+      let formattedCnpj = '';
+      for (let i = 0; i < cnpj.length; i++) {
+        if (i === 2 || i === 5) {
+          formattedCnpj += '.' + cnpj.charAt(i);
+        } else if (i === 8) {
+          formattedCnpj += '/' + cnpj.charAt(i);
+        } else if (i === 12) {
+          formattedCnpj += '-' + cnpj.charAt(i);
+        } else {
+          formattedCnpj += cnpj.charAt(i);
+        }
+      }
+
+      cnpjInput.value = formattedCnpj;
+
+      if (cnpj.length === 14) {
+        cnpjInput.setAttribute('maxlength', '18'); // Para permitir a digitação de pontos, barras e traço
+      } else {
+        cnpjInput.setAttribute('maxlength', '18');
+      }
+    }
+
+    
+    $(".em_desenvolvimento").click(function (event) {
+      event.preventDefault();
+      alert("Esta funcionalidade estará disponível em uma próxima sprint!");
+    });
+
+    function toggleSubItens(button) {
+      var subItens = button.nextElementSibling;
+      if (subItens.style.display === "block") {
+        subItens.style.display = "none";
+      } else {
+        subItens.style.display = "block";
+      }
+    }
+
+    window.onload = function () {
+      var subitens = document.getElementsByClassName("esconder");
+      for (var i = 0; i < subitens.length; i++) {
+        subitens[i].style.display = "none";
+      }
+    }
+    imprimirNomeCard1(0);
+    imprimirNomeCard2(1);
+    imprimirNomeCard3(2);
+    imprimirNomeCard4(0);
+    imprimirNomeCard5(1);
+    imprimirNomeCard6(2);
+    imprimirNomeCard7(3);
+    imprimirNomeCard8(4);
+    imprimirDadosCard1(0);
+    imprimirDadosCard2(1);
+    imprimirDadosCard3(2);
+    imprimirDadosCard4(0);
+    imprimirDadosCard5(1);
+    imprimirDadosCard6(2);
+    imprimirDadosCard7(3);
+    imprimirDadosCard8(4);
+
+  </script>
+
+
+</body>
+
+</html>
